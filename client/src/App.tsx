@@ -1,6 +1,6 @@
 import { RecoilRoot } from "recoil"
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import LandingPage from "./Components/LandingPage";
+import LandingPage from "./routes/LandingPage";
 function App() {
 
   return (
@@ -8,8 +8,6 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element = {<LandingPage/> }/>
-          {/* <Route path="/home" element = {<HomePage/> }/>
-          <Route path="/about" element = {<AboutPage/> }/> */}
         </Routes>
       </Router>
     </RecoilRoot>
