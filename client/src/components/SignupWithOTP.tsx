@@ -1,4 +1,4 @@
-import { Box, Button, TextField, ThemeProvider, createTheme } from "@mui/material";
+import { Button, TextField, ThemeProvider, createTheme } from "@mui/material";
 
 function SignupWithOTP() {
 
@@ -13,35 +13,30 @@ function SignupWithOTP() {
         },
     })
 
-    return ( 
-    
-    <div style={ {
-        // width:"80%",
-        // height : '98vh',
-        // display: 'flex',
-        // justifyContent: 'space-between',
-        paddingTop: '40%'
-    }}>
+    return (
         <ThemeProvider theme={inputCustomTheme}>
             <TextField  
+                sx={{
+                    display:"flex",
+                    width:'100%',
+                    marginRight:'50px'
+                }}
                 id="outlined-textarea"
                 placeholder="Type Your Email"
                 type='email'
-                fullWidth = {true}
                 InputProps={{
                         endAdornment : 
                             <Button variant="outlined"
                                         sx={{
                                             margin:'10px',
                                             fontWeight: 'bolder',
-                                            background:'#f59342',
+                                            background:'#f4a74b',
+                                            border:'none'
                                         }}
                             >Subscribe</Button>
                         }}
             />
         </ThemeProvider>
-
-    </div>
     )
 }
 

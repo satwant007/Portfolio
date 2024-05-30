@@ -16,6 +16,20 @@ function OrangeLogo () {
     </div>
     );
 }
+function OrangeLogoShort() { 
+
+  const logoStyles = {
+    width  : '70px',   
+    height  : '70px',
+    padding : '10px'
+  }
+
+    return (
+    <div>
+      <img src={logoImage} alt="Orange Corp Logo" style={logoStyles}/>
+    </div>
+    );
+}
 
 function OrangePoem () {
   
@@ -78,5 +92,6 @@ function OrangePoemComplete() {
 }
   export  {
     OrangeLogo,
+    OrangeLogoShort,
     OrangePoemComplete
   };
