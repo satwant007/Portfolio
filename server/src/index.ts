@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/user', userRoutes);
 
-console.log("jajas")
+console.log("Backend Server started")
 app.listen(port, ()=>{
     console.log(`Example app listening at http://localhost:${port}`)
 });
@@ -20,4 +20,4 @@ app.get('/me', async (req,res)=>{
 })
 
 
-mongoose.connect('mongodb://localhost:27017/Portfolio', { dbName: "Portfolio" });
+// mongoose.connect('mongodb://localhost:27017/Portfolio', { dbName: "Portfolio" });

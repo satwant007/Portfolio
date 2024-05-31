@@ -23,9 +23,13 @@ router.post('/signup', async (req, res)=>{
 
     // add an entry of username otp in Mongo DB
     const newUser = new User({userEmail, currentOtp})
-    await newUser.save();
+    // await newUser.save();
     sendUserOTPEmail(userEmail, currentOtp);
-    res.json({ message: 'User created successfully ', userEmail });
+    res.json({ 
+        message: 'User created successfully ', 
+        userEmail,
+        currentOtp 
+    });
 });
 
 export default router
